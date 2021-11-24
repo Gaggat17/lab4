@@ -1,0 +1,233 @@
+<html>
+    <head>           
+        <title>Personal Site</title>
+        <!--Для персональної веб-сторінки використав external-CSS, підключивши файл style1.css-->
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <!--Також об'явив внутрішній CSS-->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        /**Задаємо висоту хедеру**/
+        header{
+            height: 800px;
+        }
+        /**Створюємо контейнер для вмісту**/
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /**Створюємо контейнер1 для вмісту сторінки після хедеру**/
+        .container1{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px 0 50px 0;
+        }
+        .container1 table{
+            text-align: center;
+        }
+        /**Задав відступ для більш зручного вигляду елементів списку**/
+        .container1 li {
+            margin-top: 10px;
+        }
+        /** Задаємо блоку1 текст по середина та внутрішній відступ**/
+        .block1{
+            padding: 0px 50px 0 50px;
+            text-align: center;
+        }
+        /**Задаємо блоку 2, заголовку 2 текст по середині та зовнішній відступ знизу**/
+        .block2 h2{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        /**Задаємо висоту та колір навігації**/
+        navbar{
+        height: 75px;
+        }
+        /**Задаємо фото для шапки**/
+        .head_pic{
+        background-image: url("background.jpg");
+        }
+        /**Задаємо висоту сторінки мейн, та відступи**/
+        main{
+        height: 975px;
+        margin: 75px 100px 75px 100px;
+        }
+        /**Задаємо висоту, колір, відступ футеру**/
+        footer{
+        height: 100px;
+        background-color: rgb(236, 236, 236);
+        margin-top: 50px;
+        }
+        /**Задаємо навігацій (блок) висоту, величину тексту, завжди високий текст, display flex, шрифт, та розміщення**/
+        .navigation{
+            height: 100px;
+            text-align: center;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-family:monospace
+        }
+        /**Задаємо розміщення елемнтам навігації, відступ, жирність, прибираємо нижнє підкреслення, задаємо колір та еффект після хуверу**/
+        .nav_link{
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 15px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            transition: color .2s linear;
+        }
+        /**Задаємо хувер для навігації**/
+        .nav_link:hover{
+            color: #996b59;
+        }
+        /**Задаємо параметри для блоку входу**/
+        header .entrance{
+            height: 80%;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 50px;
+            font-family:monospace;
+        }
+        /**Задаємо відступ для заголовків**/
+        .entrance h1 h6{
+            margin-top: 40px;
+        }
+        .container1 h2{
+            margin-bottom: 10px;
+        }
+        /**Задаємо колір та прибираємо підкреслення у посилань**/
+        .entrance a{
+            text-decoration: none;
+            color: white;
+        }
+        /**Задаємо ширину та висоту фото 100%**/
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <body>
+        <header class="head_pic">
+            <navbar>
+                <!--Створюємо навігацію та задаємо клас-->
+                <div class="navigation">
+                    <div>
+                        <!--Задаємо клас дял елементів -->
+                    <a class="nav_link" href="lab4 task4.2.html">Task 4.2</a>
+                    <a class="nav_link" href="lab4 task4.3.html">Task 4.3</a>
+                    <a class="nav_link" href="#">Telegram</a>
+                    <a class="nav_link" href="#">Instagram</a>
+                    </div>
+                </div>
+             </navbar>
+             <!--Задаємо клас для входу -->
+             <div class="entrance">
+                <h6>#I love food</h6>
+                <h1>Welcome to my WebSite</h1>
+        </div>
+            </header>
+            <main>
+                <!--Задаємо клас для елементів сторінки -->
+        <div class="container">
+            <div class="block1">
+       <img src="personal.jpg" >
+        <h1>Євгеній Шуліко Олександрович</h1>
+        </div>
+        <!--Задаємо клас для елементів сторінки -->
+        <div class="block2">
+        <h2>Улюблені заняття/хобі</h2>
+            <ul>
+                <li>Спорт (тренування)</li>
+                <li>Вивчення англійської мови</li>
+                <li>Ігри</li>
+                <li>Музика</li>
+                <li>Інколи полюбляю читати книжки</li>
+            </ul>
+            </div>
+            </div>
+        <br>
+        <!--Задаємо клас для елементів сторінки -->
+        <div class="container1">
+        <h2>Улюблені Групи (Музика)</h2>
+        <ul>
+            <li>The Score</li>
+            <li>Imagine Dragons</li>
+            <li>The Cab</li>
+        </ul> 
+        </div>
+        <!--Задаємо клас для елементів сторінки -->
+        <div class="container1">
+                <h2>Scills</h2>
+                <table cellspacing="10px" cellpadding="10px">
+                    <tr>
+                        <!-- Знайшов в інтернет мережі (об'явлення набором символів) символ зірочку -->
+                        <td>HTML - &#11088;&#11088;&#11088;&#11088;&#11088;</td>
+                        <td>CSS - &#11088;&#11088;&#11088;&#11088;</td>
+                    </tr>
+                    <tr>
+                        <td>Javascript - &#11088;&#11088;</td>
+                        <td>C++ - &#11088;</td>
+                    </tr>
+                    <tr>
+                        <td>Python - &#11088;&#11088;&#11088;</td>
+                        <td>Painting - &#11088;&#11088;&#11088;</td>
+                    </tr>
+                    <!-- Об'єднав 3 останні комірки таблиці в 2, за допомогою атрибута colspan 2 --> 
+                    <tr">
+                        <td>Math - &#11088;&#11088;&#11088;</td>
+                        <td>Grammar - &#11088;&#11088;&#11088;&#11088;&#11088;</td>
+                    </tr>
+                    <!-- Об'єднав 3 останні комірки таблиці в 2, за допомогою атрибута colspan 2 --> 
+                    <tr>
+                        <td colspan="2">Ukrainian Knowledge - &#11088;&#11088;&#11088;&#11088;&#11088;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Russian Knowledge - &#11088;&#11088;&#11088;&#11088;&#11088;</td>
+                    </tr>
+                    <!-- Задав для елеентів class, який допомже в external css для заповнення атрибутами -->
+                    <tr>
+                        <td colspan="2">English Knowledge - &#11088;&#11088;&#11088;&#11088;</td>
+                    </tr>
+                </table>
+            <!-- Створив форму по прикладу -->
+            <h2>Контаки</h2>
+            <form action="" method="post">
+                <label for="name">Your Name:</label>
+                <!-- Додав інпут для імені -->
+                <input type="text" name="user_name" placeholder="Ваше ім'я">
+                <br>
+                <br>
+                <!-- Додав інпут для введення пошти -->
+                <label for="name">Your Email:</label>
+                <input type="email" name="user_email" placeholder="Ваша пошта">
+                <br>
+                <br>
+                <!-- Додав інпут для введення повідомлення -->
+                <label for="name">Message  :</label>
+                <input id="text" type="text" name="user_msg" placeholder="Текст тут">
+                <input type="submit">
+            </form>
+            </div>
+            </div>
+            </main> 
+            <!--Створюємо футер та задаємо клас навігацію, для швидкого адаптування вмісту -->
+            <footer>   
+            <div class="navigation">
+            <a href="https://www.instagram.com/smartsfact/">Instagram</a>
+            </div>
+            </footer>
+    </body>
+</html>
