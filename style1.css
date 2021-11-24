@@ -1,0 +1,30 @@
+/**Об'явив колір для тіла сторінки**/
+body{
+    background-color: white;
+}
+/**Об'явив для фото ширину та висоту**/
+img{
+    width: 350px;
+    height: 350px;
+}
+/**Об'явив для параграфів шрифт, колір, зробив текст жирним**/
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+/**Об'явив для заголовків 1-2го рівня колір, шрифт, та розмір**/
+h1, h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+/**Прибрав у посилань підкреслення знизу, додав колір**/
+a{
+    text-decoration: none;
+}
+/**Прибрав у елементів списку (кружки), задав колір, розмір тексту, висоту лінії, варіант тексту**/
+ul li{
+    list-style-type: none;
+    font-size: 17px;
+    font-variant: small-caps;
+    line-height: 20px;
+}
