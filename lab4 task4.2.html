@@ -1,0 +1,219 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" name="viewport" content="width=device-width, initial-scale=1">
+      <title>task4.2</title>
+ </head>
+ <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+        /**Задаємо висоту хедеру**/
+header{
+    height: 800px;
+    background-image: url(background1.jpg);
+}
+        /**Задаємо висоту, колір навігації**/
+navbar{
+  height: 75px;
+  background-color: rovalblue;
+}
+        /**Задаємо висоту, та відступи мейну**/
+main{
+  height: 975px;
+  margin: 75px 100px 75px 100px;
+
+}
+        /**Задаємо блоку display**/
+.gray_box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/**Задаємо параметри блокам 1 та 2**/
+.orange_box1{
+  height: 500px;
+  width: 48%;
+  background-color: tomato;
+}
+.orange_box2{
+  height: 500px;
+  width: 48%;
+  background-color: tomato;
+}
+/**Адаптуємо блоки при меншому розширенні екрану**/
+@media (max-width: 1000px){
+  .orange_box1{
+  height: auto;
+}
+.orange_box2{
+  height: auto;
+}
+main{
+  height: auto;
+}
+}
+/**Задаємо параметри блокам знизу**/
+.brick_box1{
+  height: 100px;
+  width: 48%;
+
+}
+.brick_box2{
+  height: 100px;
+  width: 48%;
+
+}
+/**Задаємо параметри параграфу**/
+.paragraph{
+    text-align: center;
+    font-family: monospace;
+    color: black;
+    height: 200px;
+    margin-bottom: 75px;
+}
+.paragraph p{
+    margin-top: 40px;
+    font-size: 20px;
+}
+/**Адаптуємо параграфи для меншого розширення екрану**/
+@media (max-width: 1000px){
+  .paragraph p{
+  font-size: 14px;
+}
+}
+@media (max-width: 570px){
+  .paragraph p{
+  font-size: 12px;
+}
+}
+/**Задаємо параметри пре-футеру**/
+.prefooter{
+  height: 50px;
+  background-color:rgb(230, 230, 230);
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/**Задаємо параметри футеру**/
+footer{
+  height: 100px;
+  background-color: #043023;
+}
+/**Задаємо параметри навігації (блоку)**/
+.navigation{
+    height: 100px;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family:monospace
+}
+/**Задаємо параметри елемнтам навігацій, та додаємо еффект в  секунди після хуверу**/
+.nav_link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+/**Задаємо хувер**/
+.nav_link:hover{
+    color: #996b59;
+}
+/** Задаємо параметри для входу**/
+header .entrance{
+    height: 80%;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    font-family:monospace;
+
+}
+/**Задаємо параметри посиланням та заголовкам входу**/
+.entrance h2 h6 h3{
+    margin-top: 40px;
+}
+.entrance a{
+    text-decoration: none;
+    color: white;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+/**Адаптуємо фото для екранів з малим розширенням**/
+@media (max-width: 1000px){
+img{
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+ <body>
+  <header><!-- Об'являємо наш хедер, де буде міститися навігація по сайту -->
+     <navbar>
+        <!--Навігація -->
+        <div class="navigation">
+            <div>
+            <a class="nav_link" href="#">About</a>
+            <a class="nav_link" href="#">Service</a>
+            <a class="nav_link" href="#">Blog</a>
+            <a class="nav_link" href="#">Work</a>
+            <a class="nav_link" href="lab4 task4.3.html">Task 4.3</a>
+            <a class="nav_link" href="index.html">Main Page (Personal)</a>
+            </div>
+        </div>
+     </navbar>
+     <div class="entrance">
+        <h6>We are all together</h6>
+        <h1>We are Europe</h1>
+        <h3><a href="#">Watch now!</a></h3>
+        </div>
+  </header>
+  <!-- Об'являємо мейн - головну частину сторінки -->
+   <main>
+    <!-- Об'являємо параграф за зразком -->
+    <div class="paragraph">
+    <h1>Nature</h1><p>Our Earth is so beautiful. There, are a lot of blue rivers and lakes on the Earth. Its oceans are full of wonders. There are high mountains covered with snow and wonderful fields and forests full of different plants and animals. The sun shines high up in the blue sky. At night we can see the moon and millions of stars. One season comes after another and brings changes in weather and nature. There are so many wonderful places to visit and interesting things to see. Nature gives people its riches to live and enjoy.</p>
+    </div>
+     <div class="gray_box"><!-- Об'являємо блок для Flexbox, та в CSS робимо так, щоб між двома блоками було місце-->
+       <div class="orange_box1">
+           <img src="square1.jpg">
+       </div><!-- 1 блок -->
+       <div class="orange_box2">
+           <img src="square2.jpg">
+       </div><!-- 2 блок -->
+    </div>
+    <div class="gray_box"><!-- Тут я об'явив 2 блоки, в прикладі на картинці видно ще 2 блоки внизу, але в зразку чомусь їх нема -->
+        <div class="brick_box1 paragraph">
+            <p>We can’t live without fresh air, clean water, sunshine and a lot of things which we take from the nature. That's why we must take care of it. We must keep our rivers and lakes, forests and towns clean.</p>
+        </div>
+        <div class="brick_box2 paragraph">
+            <p>We must take care of each plant and each animal. We must plant flowers — not pick them up, feed birds and animals in winter — not kill them. Then we'll be happy to live on the most beautiful planet in the Universe</p>
+        </div>
+   </main>
+   <!-- Об'являємо блок перед футером, що буде містити доп. інформацію -->
+<div class="prefooter">
+<p>Some additional information here</p>
+</div><!-- Об'являємо футер -->
+   <footer>
+     <div class="navigation">
+        <a href="#" class="nav_link">Instagram</a>
+        <a href="#" class="nav_link">Telegram</a>
+        <a href="#" class="nav_link">FaceBook</a>
+    </div>
+   </footer>
+ </body>
+</html>
